@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lipez Divulgation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="file:///C:/Users/user/Downloads/lipezdivulgation/images/lipez.png" alt="Logo Lipez" class="logo">
+        <h1>Lipez Divulgation</h1>
+        <button id="divulgarBtn" class="button">Divulgar Servidor</button>
+        <button id="servidoresBtn" class="button">Ver Servidores</button>
+        <button id="contatoBtn" class="button">Contato com Suporte</button>
+    </div>
+
+    <div id="uploadSection" class="hidden">
+        <h2>Divulgar Servidor</h2>
+        <form id="uploadForm" class="upload-form">
+            <label for="serverLogo">Logo do Servidor:</label>
+            <input type="file" id="serverLogo" accept="image/*" required>
+
+            <label for="discordLink">Link do Discord:</label>
+            <input type="text" id="discordLink" placeholder="https://discord.gg/seulink" required>
+
+            <label for="partnershipModel">Modelo de Parceria:</label>
+            <input type="text" id="partnershipModel" placeholder="Ex: Parceria, Promoção..." required>
+
+            <label for="gamePhotos">Fotos do Jogo:</label>
+            <input type="file" id="gamePhotos" accept="image/*" multiple required>
+
+            <button type="submit" class="button">Enviar</button>
+            <button type="button" id="cancelarBtn" class="button">Cancelar</button>
+        </form>
+    </div>
+
+    <div id="serverList" class="server-list hidden">
+        <h2>Servidores Divulgados</h2>
+        <div id="serversContainer" class="servers-container"></div>
+    </div>
+
+    <div id="contatoSection" class="hidden">
+        <h2>Contato com Suporte</h2>
+        <p>Entre em contato comigo no Discord: <a href="https://discord.com/users/770093379065217045" target="_blank" class="discord-link">lipez21</a></p>
+        <p>Ou envie um e-mail para: <a href="mailto:lipez8042@gmail.com" class="email-link">lipez8042@gmail.com</a></p>
+        <button id="fecharContatoBtn" class="button">Fechar</button>
+    </div>
+
+    <footer>
+        <p>Criado por <span class="author">@lipez21</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

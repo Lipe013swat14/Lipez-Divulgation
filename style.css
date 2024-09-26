@@ -1,0 +1,131 @@
+body {
+    background: linear-gradient(135deg, #2d2d2d 50%, #5e4ca2 50%); /* Gradiente roxo e preto */
+    color: #e0e0e0; /* Cor do texto */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background 0.5s; /* Animação suave de fundo */
+}
+
+.container {
+    text-align: center; /* Centraliza o conteúdo */
+    padding: 20px;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 20px; /* Centraliza a imagem e adiciona uma margem inferior */
+    max-width: 100%; /* Ajusta a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    animation: fadeIn 1s; /* Animação para a logo */
+}
+
+h1 {
+    color: #9b59b6; /* Cor roxa para o título */
+    animation: fadeIn 1.5s; /* Animação para o título */
+    font-size: 2.5em; /* Aumenta o tamanho da fonte */
+    margin: 10px 0; /* Margem do título */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra no texto */
+}
+
+.button {
+    background-color: #6c5ce7; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 12px 20px; /* Espaçamento interno */
+    font-size: 1em; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    transition: background-color 0.3s, transform 0.2s; /* Animação suave */
+    margin: 10px; /* Margem entre botões */
+}
+
+.button:hover {
+    background-color: #a29bfe; /* Cor ao passar o mouse */
+    transform: translateY(-2px); /* Levanta o botão */
+}
+
+.button:active {
+    transform: translateY(0); /* Retorna à posição original */
+}
+
+.hidden {
+    display: none; /* Esconde elementos */
+}
+
+.upload-form {
+    text-align: left; /* Alinha texto à esquerda no formulário */
+    margin: 20px auto; /* Margem centralizada */
+    width: 80%; /* Largura do formulário */
+}
+
+label {
+    display: block; /* Cada label ocupa a linha inteira */
+    margin: 10px 0 5px; /* Margens do label */
+    color: #9b59b6; /* Cor roxa para labels */
+    font-weight: bold; /* Negrito para labels */
+}
+
+input[type="text"], input[type="file"] {
+    width: calc(100% - 20px); /* Largura do input com padding */
+    padding: 10px; /* Padding dos inputs */
+    margin-bottom: 20px; /* Margem abaixo do input */
+    border: 1px solid #ccc; /* Borda dos inputs */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: border-color 0.3s; /* Animação para a borda */
+}
+
+input[type="text"]:focus, input[type="file"]:focus {
+    border-color: #9b59b6; /* Muda a cor da borda ao focar */
+    outline: none; /* Remove o contorno padrão */
+}
+
+.server-list {
+    text-align: center; /* Centraliza a lista de servidores */
+    color: #9b59b6; /* Cor roxa para textos */
+}
+
+.servers-container {
+    display: flex; /* Usando flexbox para alinhar os servidores */
+    flex-wrap: wrap; /* Permite quebra de linha */
+    justify-content: center; /* Centraliza os itens */
+}
+
+.server-card {
+    background-color: #333; /* Cor de fundo do card */
+    color: #fff; /* Cor do texto */
+    border: 1px solid #555; /* Borda do card */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Padding interno */
+    margin: 10px; /* Margem entre os cards */
+    max-width: 200px; /* Largura máxima do card */
+    text-align: center; /* Centraliza o texto no card */
+    animation: fadeIn 0.5s; /* Animação de entrada para cards */
+}
+
+/* Estilo para link do Discord */
+.discord-link {
+    color: #6c5ce7; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.discord-link:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+
+/* Animação para Fade In */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+footer {
+    text-align: center; /* Centraliza o texto do footer */
+    margin-top: 20px; /* Margem superior do footer */
+    color: #e0e0e0; /* Cor do texto do footer */
+}
+
+.author {
+    color: #9b59b6; /* Cor roxa para o autor */
+    font-weight: bold; /* Negrito para o autor */
+}
